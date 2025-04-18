@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>CSS Units | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            body
+            {
+                margin: 30px;
+                background-color: rgb(144, 192, 184);
+                min-height: 100vh;
+            }
+            section
+            {
+                width: 50%; /* sections will only take up half the page horizontally */
+            }
+            p 
+            {
+                /* Default font size is 16px */
+                font-size: 2rem;
+            }
+            h1 
+            {
+                border: 5px dashed gold; 
+                padding: 10px;
+                font-size: 4rem;
+                
+                /* Default width is 100% */
+                width: 70%;
+            }
+            ul
+            {
+                padding-top: 10px;
+                padding-left: 20px;
+                font-size: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <h1>CSS Units</h1><br>
+            <section>
+                <h2>Overview</h2><br>
+                <p>
+                    This page is about CSS units. Units are the acceptable types of measurements that can be declared for adjusting length. Width of all sections has
+                    been set to 50%.
+                </p>
+            </section><br><br>
+            <section>
+                <h2>Absolute Lengths</h2><br>
+                <p>
+                    'Absolute length' refers to units that always remain at fixed size no matter what screen resolution or device is used. List of absolute lengths:<br>
+                </p>
+                <ul>
+                    <li>px - pixels</li>
+                    <li>cm - cinteimeters</li>
+                    <li>mm - milimeters</li>
+                    <li>in - inches</li>
+                    <li>pt - points</li>
+                    <li>pc - picas</li>
+                </ul>
+            </section><br><br>
+            <section>
+                <h2>Relative Lengths</h2><br>
+                <p>
+                    'Relative length' refer to units that can be resized according to scale, screen resolution and/or device accessing the page. List of relative lengths:<br>
+                </p>
+                <ul>
+                    <li>em - make content x times the size of current font.</li>
+                    <li>ex - used for x-height of current text.</li>
+                    <li>ch - for the width of the '0'.</li>
+                    <li>rem - relate to font size of root element.</li>
+                    <li>vw - relate to 1% of the viewport width.</li>
+                    <li>vh - relate to 1% of the viewport height.</li>
+                    <li>vmin - relate to 1% of the viewport's smaller dimension.</li>
+                    <li>vmax - relate to 1% of the viewport's larger dimension.</li>
+                    <li>% - percentage that adjusts according to viewport.</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
