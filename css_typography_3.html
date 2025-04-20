@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Typography & Fonts| Vijay CSS</title>
+
+        <!--Imports-->
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--font awesome-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet"> <!--font: fuzzy bubbles-->
+        <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet"> <!--font: finger paint-->
+        <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap" rel="stylesheet"> <!--font: fascinate inline-->
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet"> <!--font: borel-->
+
+        <style>
+            /* Structure */
+            body
+            {
+                background-color: #c4c4c4;
+                font-family: Arial;
+                line-height: 2rem;
+                letter-spacing: 1px;
+                word-spacing: 2px;
+            }
+            header
+            {
+                border: 5px solid #bd0000;
+                border-radius: 20px;
+                outline: 5px dashed #5900ff;
+                outline-offset: 1.2rem;
+                background-color: #fff09c;
+                margin: 4rem;
+                padding: 3rem;
+                width: 80%;
+                text-align: center;
+            }
+            .section1, .section2, .section3,
+            .section4, .section5
+            {
+                border: 5px solid black;
+                border-radius: 20px;
+                margin: 4rem;
+                padding: 2rem;
+                width: 80%;
+            }
+            
+            /* General */
+            h1 {font-size: 50px; font-weight: 800; text-shadow: 10px 10px 10px rgb(255, 94, 0);}
+            h2 {font-size: 40px; padding-bottom: 3rem; text-decoration: underline; text-shadow: 10px 10px 10px rgb(102, 96, 158);}
+            h3 {font-size: 25px; padding-top: 2rem; padding-bottom: 2rem; text-shadow: 10px 10px 10px rgb(0, 204, 255);}
+            p {font-size: 20px;}
+            ul {font-size: 20px; padding-left: 1.5rem;}
+            ul li a {color: blue;}
+            ul li a:hover {color: white;}
+
+            /* Text formatting */
+            .highlight {background-color: yellow;}
+            .italic {font-style: italic;}
+            .bold {font-weight: 800;}
+            .bold-plus {font-weight: 1000;}
+
+            /* Background colours */
+            .background1 {background-color: #afff9f;}
+            .background2 {background-color: #ee99ff;}
+            .background3 {background-color: #a9d4ff;}
+            .background4 {background-color: #ffbb94;}
+            .background5 {background-color: #c3adff;}
+
+            /* External fonts */
+            .fuzzy_bubbles {font-family: "Fuzzy Bubbles", sans-serif; font-style: normal}
+            .fuzzy_bubbles-bold {font-family: "Fuzzy Bubbles", sans-serif; font-weight: 1000; font-style: normal;}
+            .finger_paint {font-family: "Finger Paint", sans-serif; font-style: normal;}
+            .fascinate_inline {font-family: "Fascinate Inline", system-ui; font-style: normal;}
+            .borel {font-family: "Borel", cursive; font-weight: 400; word-spacing: 4px; font-style: normal;}
+
+            /* Border outlines */
+            #outline1 {outline: 5px solid rgb(255, 238, 142); outline-offset: 10px;}
+            #outline2 {outline: 5px dashed rgb(255, 124, 150); outline-offset: 10px;}
+            #outline3 {outline: 5px dotted rgb(153, 255, 167); outline-offset: 10px;}
+            #outline4 {outline: 10px double rgb(112, 102, 255); outline-offset: 10px;}
+            #outline5 {outline: 10px groove rgb(255, 201, 51); outline-offset: 10px;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Typography & Fonts</h1>
+        </header>
+        <main>
+            <section class="section1 background1", id="outline1">
+                <h2>Definition</h2>
+                <p class="fuzzy_bubbles-bold">
+                    <span class="highlight">CSS typography</span> is the term to describe how text is styled and shown on a website using CSS. 
+                    These methods cover all the CSS properties and techniques used to control how text is displayed, making it readable and attractive across the webpage.
+                </p>
+            </section>
+            <section class="section2 background2", id="outline2">
+                <h2>Internal Fonts</h2>
+                <p class="borel">
+                    Internal fonts are members of the font family that are pre-installed on computers. Because they default fonts on most IT systems, they can be
+                    declared at any time with the 'font-family' CSS property. Common font types used on applications and websites include: Arial, Calibri, Times
+                    New Roman, etc.
+                </p>
+            </section>
+            <section class="section3 background3", id="outline3">
+                <h2>External Fonts</h2>
+                <p>
+                    External fonts are custom fonts from elsewhere (i.e. hosted on servers). They are not pre-installed on most computers; as such, to use an external font,
+                    the font file needs to be imported from the source (e.g. Google fonts). Once the font file has been imported, it can now be declared using the 'font-family'
+                    CSS property.
+                </p>
+            </section>
+            <section class="section4 background4", id="outline4">
+                <h2>External Font Sources</h2>
+                <p style="padding-bottom: 1rem;">
+                    <span class="italic">The below are open sources where custom fonts can be imported and used on a website:</span>
+                </p>
+                <ul>
+                    <li><span class="bold">Google Fonts:</span> <a href="http://fonts.google.com", target="_blank">http://fonts.google.com</a></li>
+                    <li><span class="bold-plus">Adobe Fonts:</span> <a href="http://fonts.adobe.com", target="_blank">http://fonts.adobe.com</a></li>
+                    <li>Font Squirrel: <a href="http://fontsquirrel.com", target="_blank">http://fontsquirrel.com</a></li>
+                    <li>Font Awesome (for icons): <a href="http://fontawesome.com", target="_blank">http://fontawesome.com</a></li>
+                </ul>
+            </section>
+            <section class="section5 background5", id="outline5">
+                <h2>CSS Properties</h2>
+                <div>
+                    <h3>Font Properties:</h3>
+                    <ul>
+                        <li>Font-family: [font] - set the font type (used for both internal or external).</li>
+                        <li>Font-size: [length] - set the size of font in.</li>
+                        <li>Font-weight: [weight] - adjust boldness of text from 100-1000 (default value: 500).</li>
+                        <li>Font-style: [style] - used for making text italic, oblique or 'none' if text was previously italic.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Layout Properties:</h3>
+                    <ul>
+                        <li>Line-height: [length] - add padding in-between lines of text.</li>
+                        <li>Letter-spacing: [length] - adjust space between single characters.</li>
+                        <li>Word-spacing: [length] - adjust spacing between words.</li>
+                        <li>Text-align: [value] - aligns the block of text to: left, right, center or justify.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Text Effects:</h3>
+                    <ul>
+                        <li>Text-decoration: [value] - for applying any of the following: underline, line-through, overline, or resetting to 'none' if text
+                            is already underlined (e.g. hyperlinks).</li>
+                        <li>Text-transform: [value] - for making all text uppercase, lowercase or capitlised. Capitalised will make the first letter
+                            of every word begin with capital letters.</li>
+                        <li>Text-shadow: [h-offset] [v-offset] [b-length] [colour] - adds text shadow. H-offset = horizontal length. V-offset = vertical length.
+                            B-length = (optional) blur radius, default value is 0. Colour = shadow colour.</li>
+                        <li>Text-indent: [length] - adjusts the indentation of the first line of text.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

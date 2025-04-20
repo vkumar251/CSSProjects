@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Styling Links | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css"> 
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+
+        <style>
+            /* General */
+            h1 {color: gold; font-size: 40px;}
+            h2 {color: lightgreen; font-size: 30px; margin: 1rem; text-decoration: underline;}
+            p {color: white; font-size: 20px;}
+            ul li {list-style-type: none;}
+            ul li a {text-decoration: none; color: skyblue;} /* Change colour of hyperlink */
+            ul li a:visited {color: green;} /* Change 'visited' colour when clicked */
+            ul li a:hover {color: darkblue; text-decoration: underline; opacity: 0.5;} /* Change colour when cursor hovers over */
+            ul li a:focus {color: darkblue; text-decoration: underline; background-color: gold;} /* Change colour when link is selected by pressing tab */
+            ul li a:active {color: red; text-decoration: underline;} /* Change colour while clicked */
+
+            /* Structure */
+            body
+            {
+                background-color: rgb(13, 0, 43);
+                font-family: Arial;
+            }
+            header
+            {
+                background-color: rgb(4, 32, 0);
+                border: 5px solid white;
+                width: 80%;
+                padding: 2em;
+                margin: 2em;
+                text-align: center;
+            }
+            section
+            {
+                background-color: rgb(122, 39, 0);
+                border: 5px solid white;
+                width: 80%;
+                padding: 2em;
+                margin: 2em;
+            }
+            div
+            {
+                background-color: rgb(59, 0, 0);
+                border: 5px dashed white;
+                padding: 1em;
+                margin: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Styling</h1>
+        </header>
+        <main>
+            <section>
+                <h2>This is a page about CSS styling</h2>
+                <div>
+                    <p>
+                        Below are a list of CSS links. Opacity of 0.5 has been applied to the hyperlinks, meaning they will turn slightly transparent
+                        when they have been hovered over. CSS opacity values from 0.0 - 1.0. 0 = invisible, 1 = fully visible.
+                    </p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#">List 1</a></li>
+                        <li><a href="#">List 2</a></li>
+                        <li><a href="#">List 3</a></li>
+                        <li><a href="#">List 4</a></li>
+                        <li><a href="#">List 5</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

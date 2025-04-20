@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Typography | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+
+        <!-- Import external font 'Borel regular' from http://fonts.google.com -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+        
+        <style>
+            body
+            {
+                padding: 10%;
+                font-size: 1.4em;
+                background-color: black;
+                color: white;
+            }
+            header h1
+            {
+                color: rgb(118, 255, 118);
+            }
+            main section
+            {
+                line-height: 1.5;
+                word-spacing: 0.2em;
+                font-weight: lighter;
+            }
+            main section p
+            {
+                font-style: oblique;
+            }
+            section h2
+            {
+                color: gold;
+            }
+            /* External font setup */
+            .font-borel
+            {
+                font-family: "Borel", cursive;
+                font-weight: 400;
+                font-style: normal;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Typography</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Definition</h2>
+                <p class="font-borel"> <!--Apply external font 'Borel'-->
+                    CSS typography is the term to describe how text is styled and shown on a website using CSS. These methods cover all the CSS properties and
+                    techniques used to control how text is displayed, making it readable and attractive across the webpage.
+                </p>
+            </section>
+            <section>
+                <h2>Font Examples</h2>
+                <ul>
+                    <li>Font-family - set the font type.</li>
+                    <li>Font-size - set the font size.</li>
+                    <li>Font-weight - adjust boldness of text from 100-1000. (default value: 400-500)</li>
+                    <li>Font-style - commonly used to make text italic. Other values include: normal, oblique.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Text Layout</h2>
+                <ul>
+                    <li>Line-height - padding between lines of text.</li>
+                    <li>Letter-spacing - adjust space between single characters (px, rem, etc).</li>
+                    <li>Word-spacing - adjust spacing between words.</li>
+                    <li>Text-align - align text to left, right, center or justify.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Text Effects</h2>
+                <ul>
+                    <li>Text-decoration - used to add underline, strikethrough (line-through) or overline. Default value: None.</li>
+                    <li>Text-transform - used to apply uppercase, lowercase or capitalised cases.</li>
+                    <li>Text-shadow - adds shadow to text.</li>
+                    <li>Text-indent - adjust indentation (space between margin and first line of text).</li>
+                    <li>Color - set text colour.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Advanced Properties</h2>
+                <ul>
+                    <li>Font-variant - small caps and other typographic features.</li>
+                    <li>White-space - controls how spaces and line breaks are handled.</li>
+                    <li>Direction - set text direction (e.g. ltr, rtl).</li>
+                    <li>@font-face - allow custom web fonts to be loaded.</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

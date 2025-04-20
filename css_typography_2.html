@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Typography | Vijay CSS</title>
+
+        <!--Imports-->
+        <link rel="stylesheet", href="css/style.css"> <!--style.css-->
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--font awesome-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap" rel="stylesheet"> <!--Lugrasimo-->
+        <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> <!--Limelight-->
+
+        <style>
+            body
+            {
+                background-color: rgb(189, 189, 189);
+                font-family: Arial;
+                margin: 2rem;
+            }
+            header
+            {
+                border: 5px solid rgb(163, 0, 0);
+                outline: 5px solid rgb(64, 0, 214);
+                outline-offset: 1rem;
+                border-radius: 10px;
+                background-color: rgb(255, 218, 149);
+                padding: 1rem;
+                text-align: center;
+                width: 50%;
+
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+            }
+            h1
+            {
+                font-size: 40px;
+                font-weight: 800;
+            }
+            h2
+            {
+                font-size: 30px;
+                font-weight: 600;
+                padding-bottom: 1.5rem;
+            }
+            p
+            {
+                line-height: 1.5em;
+            }
+            ul
+            {
+                padding-left: inherit;
+            }
+            ul li
+            {
+                line-height: 1.5em;
+            }
+            .section1, .section2, .section3, 
+            .section4, .section5
+            {
+                border: 5px solid black;
+                border-radius: 10px;
+
+                padding: 1rem;
+                font-size: 20px;
+                text-align: justify;
+                width: 50%;
+
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                margin-left: 3rem;
+                margin-right: 3rem;
+            }
+            
+            /* Classes: 'Span' Formatting' */
+            .highlight {background-color: yellow;}
+            .italic {font-style: italic;}
+            .oblique {font-style: oblique;}
+            .underline {text-decoration: underline;}
+            .bold {font-weight: bold;}
+            .bold-plus {font-weight: 1000;}
+
+            /* Classes: Background Colours */
+            .bg1 {background-color: #c8ff95;}
+            .bg2 {background-color: #e695ff;}
+            .bg3 {background-color: #ffcc99;}
+            .bg4 {background-color: #fffd6f;}
+            .bg5 {background-color: #9bb5ff;}
+
+            /* External Fonts */
+            .font-lugrasimo {font-family: "Lugrasimo", cursive;}
+            .font-limelight {font-family: "Limelight", sans-serif;}
+
+            /* Unique IDs: Border Outlines */
+            #outline1 {outline: 5px solid #ffea73;}
+            #outline2 {outline: 5px solid #7c94ff;}
+            #outline3 {outline: 5px dashed #00ff2a;}
+            #outline4 {outline: 5px dotted #ffffff; outline-offset: 10px;}
+            #outline5 {outline: 5px double #ff00bf; outline-offset: -10px; padding: 1.5rem;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Typography</h1>
+        </header>
+        <main>
+            <!--Import classes section1 & bg1 into one element-->
+            <section class="section1 bg1", id="outline1"> 
+                <h2 class="underline">Definition</h2>
+                <p class="font-lugrasimo">
+                    <span class="highlight">CSS typography</span> is the term to describe how text is styled and shown on a website using CSS. These methods cover all the CSS properties and
+                    techniques used to control how text is displayed, making it readable and attractive across the webpage.
+                </p>
+            </section>
+            <section class="section2 bg2", id="outline2">
+                <h2 class="underline">Font Examples</h2>
+                <ul>
+                    <li><span class="bold">Font-family</span> - set the font type.</li>
+                    <li><span class="bold-plus">Font-size</span> - set the font size.</li>
+                    <li>Font-weight - <span class="italic">adjust boldness of text from 100-1000. (default value: 400-500)</span></li>
+                    <li>Font-style - <span class="oblique">commonly used to make text italic. Other values include: normal, oblique.</span></li>
+                </ul>
+            </section>
+            <section class="section3 bg3", id="outline3">
+                <h2 class="underline">Text Layout</h2>
+                <ul class="font-limelight">
+                    <li>Line-height - padding between lines of text.</li>
+                    <li>Letter-spacing - adjust space between single characters (px, rem, etc).</li>
+                    <li>Word-spacing - adjust spacing between words.</li>
+                    <li>Text-align - align text to left, right, center or justify.</li>
+                </ul>
+            </section>
+            <section class="section4 bg4", id="outline4">
+                <h2 class="underline">Text Effects</h2>
+                <ul>
+                    <li>Text-decoration - used to add underline, strikethrough (line-through) or overline. Default value: None.</li>
+                    <li>Text-transform - used to apply uppercase, lowercase or capitalised cases.</li>
+                    <li>Text-shadow - adds shadow to text.</li>
+                    <li>Text-indent - adjust indentation (space between margin and first line of text).</li>
+                    <li>Color - set text colour.</li>
+                </ul>
+            </section>
+            <section class="section5 bg5", id="outline5">
+                <h2 class="underline">Advanced Properties</h2>
+                <ul>
+                    <li>Font-variant - small caps and other typographic features.</li>
+                    <li>White-space - controls how spaces and line breaks are handled.</li>
+                    <li>Direction - set text direction (e.g. ltr, rtl).</li>
+                    <li>@font-face - allow custom web fonts to be loaded.</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
