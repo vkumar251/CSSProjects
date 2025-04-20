@@ -12,14 +12,41 @@
         <style>
             /* General */
             h1 {color: gold; font-size: 40px;}
-            h2 {color: lightgreen; font-size: 30px; margin: 1rem; text-decoration: underline;}
-            p {color: white; font-size: 20px;}
-            ul li {list-style-type: none;}
+            h2 {color: lightgreen; font-size: 30px; margin: 1rem 2rem; text-decoration: underline;}
+            p {color: white; font-size: 30px; line-height: 1.5; word-spacing: 2px; letter-spacing: 1px;}
+            ul {font-size: 30px;}
+            ul li:nth-child(2) {color: red;} /* Change colour of listed item 2 to red */
             ul li a {text-decoration: none; color: skyblue;} /* Change colour of hyperlink */
             ul li a:visited {color: green;} /* Change 'visited' colour when clicked */
             ul li a:hover {color: darkblue; text-decoration: underline; opacity: 0.5;} /* Change colour when cursor hovers over */
             ul li a:focus {color: darkblue; text-decoration: underline; background-color: gold;} /* Change colour when link is selected by pressing tab */
             ul li a:active {color: red; text-decoration: underline;} /* Change colour while clicked */
+            ol {font-size: 30px;}
+            ol li:nth-child(even) {color: green;} /* Change colour of even numbered list items */
+            ol li:nth-child(odd) {color: blue;} /* Change colour of odd numbered list items */
+
+            /* Unordered List styles */
+            ul.circle {list-style-type: circle; color: white;}
+            ul.disc {list-style-type: disc; color: white;}
+            ul.square {list-style-type: square; color: white;}
+
+            /* Ordered List styles */
+            ol.lower-alpha {list-style-type: lower-alpha; color: white;}
+            ol.lower-roman {list-style-type: lower-roman; color: white;}
+            ol.upper-alpha {list-style-type: upper-alpha; color: white;}
+            ol.upper-roman {list-style-type: upper-roman; color: white;}
+            ol.disc {list-style-type: disc; color: white;}
+            ol.circle {list-style-type: circle; color: white;}
+            ol.square {list-style-type: square; color: white;}
+            ol.none {list-style-type: none; color: white;}
+            ol.decimal {list-style-type: decimal; color: white;}
+
+            /* Text formatting */
+            span.highlight {background-color: orange; color: black;}
+            span.italic {font-style: italic;}
+            span.bold {font-weight: bold;}
+            span.underline {text-decoration: underline;}
+            span.strikethrough {text-decoration: line-through;}
 
             /* Structure */
             body
@@ -36,7 +63,15 @@
                 margin: 2em;
                 text-align: center;
             }
-            section
+            div
+            {
+                background-color: rgb(59, 0, 0);
+                border: 5px dashed white;
+                padding: 2em 5em;
+                margin: 2em;
+            }
+            .section1, .section2, .section3,
+            .section4, .section5, .section6
             {
                 background-color: rgb(122, 39, 0);
                 border: 5px solid white;
@@ -44,12 +79,15 @@
                 padding: 2em;
                 margin: 2em;
             }
-            div
+            .checkmark
             {
-                background-color: rgb(59, 0, 0);
-                border: 5px dashed white;
-                padding: 1em;
-                margin: 1em;
+                list-style-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7AxnBRDKGzy-NpCROQ566ZtlzQ-P7U9bJHQ&s.png');
+                list-style: square url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7AxnBRDKGzy-NpCROQ566ZtlzQ-P7U9bJHQ&s.png') 
+                inside;
+            }
+            ::marker /* Format all bullet points of listed/unordered lists. Use ul li::marker for only formatting unordered lists */
+            {
+                font-family: fantasy;
             }
         </style>
     </head>
@@ -58,7 +96,7 @@
             <h1>CSS Styling</h1>
         </header>
         <main>
-            <section>
+            <section class="section1">
                 <h2>This is a page about CSS styling</h2>
                 <div>
                     <p>
@@ -67,12 +105,104 @@
                     </p>
                 </div>
                 <div>
-                    <ul>
-                        <li><a href="#">List 1</a></li>
-                        <li><a href="#">List 2</a></li>
-                        <li><a href="#">List 3</a></li>
-                        <li><a href="#">List 4</a></li>
-                        <li><a href="#">List 5</a></li>
+                    <ul class="circle", style="list-style-position: inside; text-align: center;">
+                        <li><a href="#">Unordered List 1</a></li>
+                        <li><a href="#">Unordered List 2</a></li>
+                        <li><a href="#">Unordered List 3</a></li>
+                        <li><a href="#">Unordered List 4</a></li>
+                        <li><a href="#">Unordered List 5</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section2">
+                <h2>Section 2</h2>
+                <div>
+                    <p>
+                        This is <span class="underline">section 2</span> of the CSS styling page. This section will be covering ordered list (ol) instead of 
+                        unordered list (ul) and applying a range of listing and hyperlink styles.
+                    </p>
+                </div>
+                <div>
+                    <ol class="upper-alpha", style="list-style-position: outside;">
+                        <li><a href="#">Ordered List 1</a></li>
+                        <li><a href="#">Ordered List 2</a></li>
+                        <li><a href="#">Ordered List 3</a></li>
+                        <li><a href="#">Ordered List 4</a></li>
+                        <li><a href="#">Ordered List 5</a></li>
+                    </ol>
+                </div>
+            </section>
+            <section class="section3">
+                <h2>Section 3</h2>
+                <div>
+                    <p>
+                        This is <span class="underline">section 3</span> of the CSS styling page. This section will be covering 
+                        <span class="highlight">custom ordered lists (ol)</span> instead of unordered list (ul) and applying a range of listing and hyperlink styles.
+                    </p>
+                </div>
+                <div>
+                    <p style="padding-bottom: 1em;">The below is a decimal (default) ordered list starting from 5.</p>
+                    <ol class="decimal", start="5">
+                        <li><a href="#">Ordered List 1</a></li>
+                        <li><a href="#">Ordered List 2</a></li>
+                        <li><a href="#">Ordered List 3</a></li>
+                        <li value="10"><a href="#">Ordered List 4 - value set to 10.</a></li>
+                        <li><a href="#">Ordered List 5</a></li>
+                    </ol>
+                </div>
+            </section>
+            <section class="section4">
+                <h2>Section 4</h2>
+                <div>
+                    <p>
+                        This is <span class="underline">section 4</span> of the CSS styling page. This section will be covering 
+                        <span class="highlight">custom ordered lists (ol)</span> instead of unordered list (ul) and applying a range of listing and hyperlink styles.
+                    </p>
+                </div>
+                <div>
+                    <p style="padding-bottom: 1em;">The below is an ordered list using roman numerals (upper-roman).</p>
+                    <ol class="upper-roman">
+                        <li><a href="#">Ordered List 1</a></li>
+                        <li><a href="#">Ordered List 2</a></li>
+                        <li><a href="#">Ordered List 3</a></li>
+                        <li><a href="#">Ordered List 4</a></li>
+                        <li><a href="#">Ordered List 5</a></li>
+                    </ol>
+                </div>
+            </section>
+            <section class="section5">
+                <h2>Section 5</h2>
+                <div>
+                    <p>
+                        This is <span class="underline">section 5</span> of the CSS styling page. This section will be covering 
+                        <span class="highlight">custom ordered lists (ol)</span> instead of unordered list (ul) and applying a range of listing and hyperlink styles.
+                    </p>
+                </div>
+                <div>
+                    <p style="padding-bottom: 1em;">The below is a reversed ordered list starting from 5.</p>
+                    <ol class="decimal", reversed>
+                        <li><a href="#">Ordered List 1</a></li>
+                        <li><a href="#">Ordered List 2</a></li>
+                        <li><a href="#">Ordered List 3</a></li>
+                        <li><a href="#">Ordered List 4</a></li>
+                        <li><a href="#">Ordered List 5</a></li>
+                    </ol>
+                </div>
+            </section>
+            <section class="section6">
+                <h2>Section 6</h2>
+                <div>
+                    <p>
+                        This is section 6 using unordered lists.
+                    </p>
+                </div>
+                <div>
+                    <ul class="checkmark">
+                        <li><a href="#">Unordered List 1</a></li>
+                        <li><a href="#">Unordered List 2</a></li>
+                        <li><a href="#">Unordered List 3</a></li>
+                        <li><a href="#">Unordered List 4</a></li>
+                        <li><a href="#">Unordered List 5</a></li>
                     </ul>
                 </div>
             </section>
