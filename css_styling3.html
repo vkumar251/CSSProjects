@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>List styling | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            /* General */
+            header h1 {font-size: 40px; color: #cc00cc; text-shadow: 0px 0px 10px #ffaeff;} 
+            section h2 {font-size: 30px; color: #7bff00; text-shadow: 0px 0px 10px #9bff9b; padding-left: 0.5em; text-align: center;}
+            section h3 {font-size: 20px;}
+            section p {font-size: 20px;}
+            section div ul {font-size: 20px; padding-left: 1em;}
+            section div ol {font-size: 20px; padding-left: 1em;}
+
+            /* Text formatting */
+            span.highlight {background-color: #ffbb00; color: black;}
+            span.bold {font-weight: 700;}
+            span.bold_plus {font-weight: 1000;}
+            span.italic {font-style: italic;}
+            span.oblique {font-style: oblique;}
+            span.underline {text-decoration: underline;}
+            span.strikethrough {text-decoration: line-through;}
+            span.overline {text-decoration: overline;}
+
+            /* Divisions */
+            .div1 {background-color: #300028; line-height: 2.0;}
+            .div1 ul {list-style-position: inside; text-align: center;}
+            .div1 ul li {list-style-type: circle;}
+            .div1 ul li a {text-decoration: none; color: #0077ff; opacity: 0.8;}
+            .div1 ul li a:hover {color: #00ccff; text-decoration: underline;}
+            .div1 ul li a:focus {color: #003b49; text-decoration: underline; background-color: gold;}
+            .div1 ul li a:active {color: red;}
+
+            .div2 {background-color: #150030; line-height: 2.0;}
+            .div2 ol {list-style-position: inside; text-align: center;}
+            .div2 ol li {list-style-type: decimal;}
+            .div2 ol li a {text-decoration: none; color: #00ff4c; opacity: 0.7;}
+            .div2 ol li a:hover {color: #a8ffa5; text-decoration: underline; opacity: 0.8;}
+            .div2 ol li a:focus {color: #004b00; text-decoration: underline; opacity: 0.8; background-color: gold;}
+            .div2 ol li a:active {color: crimson;}
+
+            .div3 {background-color: #000046; line-height: 2.0;}
+            .div3 p {word-spacing: 0em; letter-spacing: 0.1em;}
+            .div3 ol {list-style-position: inside; text-align: center; letter-spacing: 0.1em;}
+            .div3 ol li {list-style-type: upper-roman;}
+            .div3 ol li:nth-child(even) {color: rgb(0, 255, 0);}
+            .div3 ol li:nth-child(odd) {color: rgb(0, 255, 213);}
+
+            .div4 {background-color: #663100; line-height: 2.0;}
+            .div4 ol {list-style-position: inside; text-align: center;}
+            .div4 ol li {list-style-type: upper-alpha;}
+            .div4 ol li:nth-child(2) {color: #e5ff00; text-decoration: overline;}
+            .div4 ol li:nth-child(4) {color: #ff0000; font-style: italic;}
+            .div4 ol li:nth-child(5) {color: #000000; font-weight: 1000;}
+            
+            /* Individual sections */
+            #section1 {background-color: #463900; border: 5px solid #ffffff;}
+            #section2 {background-color: #48004b; border: 5px groove #1900ff;}
+            #section3 {background-color: #002b33; border: 5px outset #ffa600;}
+            #section4 {background-color: #21003f; border: 5px double #ff0000;}
+
+            /* Structure setup */
+            body
+            {
+                background-color: #0b2000;
+                color: white;
+                font-family: Arial;
+            }
+            header
+            {
+                text-align: center;
+                background-color: #00043d;
+                border: 5px solid #ff0000;
+                border-radius: 10px;
+                outline: 5px groove #00b7ff;
+                outline-offset: 20px;
+                margin: 4em auto;
+                padding: 2em;
+                max-width: 80%;
+            }
+            section
+            {
+                max-width: 80%;
+                margin: 4em auto;
+                padding: 2em;
+                border: 5px solid white;
+                border-radius: 10px;
+                outline: 5px dashed #616161;
+                background-color: black;
+            }
+            div
+            {
+                background-color: grey;
+                border: 3px solid white;
+                border-radius: 10px;
+                padding: 2em;
+                margin: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Styling</h1>
+        </header>
+        <main>
+            <section class="f-finger_paint", id="section1">
+                <h2>Section 1 - Overview & Unordered List</h2>
+                <div class="div1">
+                    <p>
+                        Below are a list of CSS links. For the unordered list below, opacity of 0.9 has been applied to the hyperlinks. 
+                        Opacity will adjust the level of transparency when the links have been hovered over. 
+                        CSS opacity values between 0.0 (invisible) - 1.0 (solid).
+                    </p>
+                </div>
+                <div class="div1">
+                    <ul>
+                        <li><a href="#">Unordered List 1</a></li>
+                        <li><a href="#">Unordered List 2</a></li>
+                        <li><a href="#">Unordered List 3</a></li>
+                        <li><a href="#">Unordered List 4</a></li>
+                        <li><a href="#">Unordered List 5</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="f-fuzzy_bubbles", id="section2">
+                <h2>Section 2 - Ordered List</h2>
+                <div class="div2">
+                    <p>
+                        This is <span class="highlight">section 2</span> of the CSS styling page. This section displays an <span class="underline">ordered list</span>
+                        instead of an unordered list. A range of styling will be applied to each hyperlink style. The below is an ordered list starting from 5.
+                    </p>
+                </div>
+                <div class="div2">
+                    <ol start="5">
+                        <li><a href="#">Ordered List 1</a></li>
+                        <li><a href="#">Ordered List 2</a></li>
+                        <li><a href="#">Ordered List 3</a></li>
+                        <li><a href="#">Ordered List 4</a></li>
+                        <li><a href="#">Ordered List 5</a></li>
+                    </ol>
+                </div>
+            </section>
+            <section class="f-fascinate_inline", id="section3">
+                <h2>Section 3 - Custom Ordered List</h2>
+                <div class="div3">
+                    <p>
+                        This is <span class="highlight">section 3</span> of the CSS styling page. This section displays an <span class="underline">ordered list</span>
+                        instead of an unordered list. The list has been styled with roman numerals. Li:nth-child(even) is green. Li:nth-child(odd) is turquoise.
+                    </p>
+                </div>
+                <div class="div3">
+                    <ol>
+                        <li>Ordered List 1</li>
+                        <li>Ordered List 2</li>
+                        <li>Ordered List 3</li>
+                        <li>Ordered List 4</li>
+                        <li>Ordered List 5</li>
+                    </ol>
+                </div>
+            </section>
+            <section class="f-borel", id="section4">
+                <h2>Section 4 - Reversed Ordered List</h2>
+                <div class="div4">
+                    <p>
+                        This is <span class="highlight">section 4</span> off the CSS styling page. This section shows a <span class="underline">reversed ordered
+                        list</span> instead of an unordered list. Additionally, extra formating has been applied to certain list items using li:nth-child(n).
+                    </p>
+                </div>
+                <div class="div4">
+                    <ol reversed>
+                        <li>Ordered List 1</li>
+                        <li>Ordered List 2</li>
+                        <li>Ordered List 3</li>
+                        <li>Ordered List 4</li>
+                        <li>Ordered List 5</li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

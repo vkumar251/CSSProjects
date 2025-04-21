@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Index Menu | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            body
+            {
+                background-color: rgb(154, 204, 233);
+                text-align: center;
+            }
+            nav
+            {
+                border: 5px solid black;
+                border-radius: 2rem;
+                margin: 0 auto 2rem;
+                max-width: 600px;
+                font-size: 2rem;
+                line-height: 3em;
+            }
+            h2
+            {
+                padding: 1rem;
+                background-color: rgb(239, 67, 255);
+                border-radius: 2rem 2rem 0 0;
+            }
+            ul
+            {
+                list-style-type: none;
+            }
+            li
+            {
+                border-top: 3px solid black;
+            }
+            li a
+            {
+                display: block; /* Make background colour in hover/focus pseudo-class affect whole nav block */
+            }
+            li a,
+            li a:visited
+            {
+                text-decoration: none;
+                color: rgb(255, 0, 0);
+            }
+            li a:hover,
+            li a:focus
+            {
+                background-color: rgb(30, 255, 0);
+                color: blue;
+                cursor: pointer;
+            }
+            li:last-child a
+            {
+                border-radius: 0 0 2rem 2rem; /* Ensure hover background stays within the border */
+            }
+        </style>
+    </head>
+    <body class="f-fuzzy_bubbles", style="margin: 2em;">
+        <header>
+            <nav> <!--Navigation-->
+                <h2>Main Menu</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
