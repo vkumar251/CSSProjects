@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Courses Index | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+
+        <style>
+            /* General */
+            h1 {font-size: 50px; font-weight: 1000; text-align: center; text-decoration: underline; color: #f500f5; text-shadow: 10px 10px 10px #4c0079; padding: 1em;}
+            h2 {font-size: 40px; text-align: center; color: #7370ff; text-shadow: 10px 10px 10px #0004ff; padding-bottom: 1em;}
+            h3 {font-size: 30px; text-align: center; color: white; text-shadow: 10px 10px 10px #919191; padding: 1.2em;}
+            nav ul {font-size: 20px;}
+            nav ul li {list-style-position: inside; list-style-type: none; font-size: 20px; border-top: 5px solid white;}
+            nav ul li a {color: #ff5100; text-decoration: none; display: block; padding: 1em;}
+            nav ul li a:hover .p1 {color: gold; text-decoration: underline;}
+            nav ul li a:focus .p1 {color: #ff3300; text-decoration: underline;}
+            nav ul li a .p2 {color: grey;}
+            nav ul li a:hover .p2 {color: #000142;}
+            nav ul li a:focus .p2 {color: #383838;} 
+            nav ul li a:hover {color: #ffa600; background-color: #007c72;}
+            nav ul li a:focus {color: #4b3100; background-color: #00ffea;} 
+            nav ul li a:active {color: #ff0000; text-decoration: underline;}
+            /* Blocks */
+            nav #ul1 {}
+            nav #ul2 {background-color: #1d001d;}
+            nav #ul3 {background-color: #000027;}
+            nav #ul4 {background-color: #442100;}
+            nav #ul5 {background-color: #1b0000;}
+            nav #ul6 {background-color: #240015; border-radius: 0 0 30px 30px;}
+            nav #ul6 li:last-child a {border-radius: 0 0 30px 30px;}
+            /* Sections */
+            section h4 {font-size: 25px; text-align: center; padding-top: 50px; color: white;}
+            section p {font-size: 20px; text-align: center; color: white;}
+            .section1 {background-color: #005e17; border-radius: 30px 30px 0 0;}
+            .section2 {background-color: #490049;}
+            .section3 {background-color: #00003d;}
+            .section4 {background-color: #a14100;}
+            .section5 {background-color: #330000;}
+            .section6 {background-color: #5a0035;}
+            
+            /* Structure setup*/
+            body
+            {
+                background-color: #252525;
+                font-family: Arial;
+            }
+            nav
+            {
+                border: 5px solid white;
+                border-radius: 30px;
+                background-color: #001f08;
+
+                margin: auto;
+                text-align: center;
+                max-width: 80%;
+            }
+        </style>
+    </head>
+    <body class="f-fuzzy_bubbles">
+        <header>
+            <h1>Courses index page</h1>
+            <h2>Fields of Study</h2>
+            <nav>
+                <h3 class="section1">Computing & Engineering</h3> <!--Section 1-->
+                <ul id="ul1">
+                    <li><a href="#">
+                        <p class="p1">Information Technology</p>
+                        <p class="p2">Use of computer systems, telecommunications and technology.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Computer Science</p>
+                        <p class="p2">Design, programming, analysis of algorithms and data structures.</p>
+                        </a></li>
+                    <li><a href="#">
+                        <p class="p1">Cyber Security</p>
+                        <p class="p2">Protecting and defending technology against cyber threats.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Artificial Intelligence</p>
+                        <p class="p2">Understanding machine learning and designing systems to imitate humans.</p>
+                    </a></li>
+                </ul>
+                <ul id="ul2">
+                    <li><h3 class="section2">Health</h3></li> <!--Section 2-->
+                    <li><a href="#">
+                        <p class="p1">Occupational Therapy</p>
+                        <p class="p2">Help individuals of all ages be able to perform daily activities.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Psychology</p>
+                        <p class="p2">Understanding the brain; human behavior, emotions, and mental processes.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Biomedical Science</p>
+                        <p class="p2">Joint study of biology and chemistry in relation to healthcare.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Nutrition & Dietetics</p>
+                        <p class="p2">Study of food and nutritions with its implications to health.</p>
+                    </a></li>
+                </ul>
+                <ul id="ul3">
+                    <li><h3 class="section3">Science</h3></li> <!--Section 3-->
+                    <li><a href="#">
+                        <p class="p1">Physics</p>
+                        <p class="p2">The fundamentals of time, matter and energy.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Chemistry</p>
+                        <p class="p2">Research and experiments of substances, elements of the periodic table, etc.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Environmental Management</p>
+                        <p class="p2">Investigating human impact on the environment through sustainable practices.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Astronomy</p>
+                        <p class="p2">Scientific study of extra-terrestrial matters from outter space, e.g. planets, stars, moons.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Geology / Earth Science</p>
+                        <p class="p2">Scientific study of the physical world, e.g. earthquakes, volcanoes, erosions.</p>
+                    </a></li>
+                </ul>
+                <ul id="ul4">
+                    <li><h3 class="section4">Business & Finance</h3></li> <!--Section 4-->
+                    <li><a href="#">
+                        <p class="p1">Finance / Accounting</p>
+                        <p class="p2">Management of revenues, financial reporting, investments and taxes.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Economics</p>
+                        <p class="p2">Study of the economy, its forces, and effects.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Business Administration</p>
+                        <p class="p2">Management of business operations, marketing, and stakeholders.</p> 
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Mathematics</p>
+                        <p class="p2">Study of numbers, shapes, algebra, geometry, etc.</p>
+                    </a></li>
+                </ul>
+                <ul id="ul5"> <!--Section 5-->
+                    <li><h3 class="section5">Art & Creativity</h3></li>
+                    <li><a href="#">
+                        <p class="p1">Multimedia Animation</p>
+                        <p class="p2">Creation of interactive animations, visuals, and media.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Graphic Design</p>
+                        <p class="p2">Rendering different types of images, e.g. vector and bitmap graphics.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Film Production</p>
+                        <p class="p2">Creating movies and videos with or without special effects.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Digital Media</p>
+                        <p class="p2">Study of various forms of media, e.g. audio, video, images, etc.</p>
+                    </a></li>
+                </ul>
+                <ul id="ul6"> <!--Section 6-->
+                    <li><h3 class="section6">Misc.</h3></li>
+                    <li><a href="#">
+                        <p class="p1">Health & Social Care</p>
+                        <p class="p2">Practice of safeguarding, helping and maintaining support for individuals with illnesses, disabilities, mental health, etc.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Law</p>
+                        <p class="p2">Study of government legislations, legal practices and theories.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Political Science</p>
+                        <p class="p2">Understanding of political systems, governance, elections, etc.</p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="p1">Sociology</p>
+                        <p class="p2">Study of society, its structures, social relations, and behavior.</p>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h4>Copyright &copy; 2024 - 2025</h2>
+                <p>All rights reserved.</p>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
