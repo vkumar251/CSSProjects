@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Columns | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            body
+            {
+                background-color: #ffcf88;
+                font-family: Arial;
+            }
+            h1
+            {
+                font-size: 40px;
+                padding: 2rem;
+            }
+            .columns
+            {
+                column-count: 4; /* Number of columns */
+                column-width: 250px;
+                column-rule: 3px solid #001aff; /* Add vertical border between columns */
+                column-gap: 8rem; /* Add padding between column lines and text */
+            }
+            .columns h2
+            {
+                margin-top: 0;
+                background-color: #222222;
+                color: white;
+                padding: 1rem;
+                break-inside: avoid;
+                font-size: 30px;
+            }
+            .columns p
+            {
+                margin-top: 0;
+                font-size: 20px;
+            }
+            .columns .p2
+            {
+                font-size: 3rem;
+                text-align: center;
+                margin: 2rem;
+                color: red;
+                column-span: all; /* Span across all columns */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Columns</h1>
+        </header>
+        <main>
+            <section class="columns">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iste, at veritatis pariatur aliquid nam harum quia eius dolore numquam.
+                    Veritatis nesciunt omnis veniam nam adipisci maiores nemo blanditiis totam distinctio, excepturi dolores dolor nostrum, aliquid at accusantium mollitia iste?
+                </p>
+                <p class="p2">Paragraph 2</p2>
+                <p>
+                    Recusandae quasi harum, sunt, itaque exercitationem deserunt tempora, quas necessitatibus sequi asperiores quod temporibus dolorum? Quisquam, facilis? Veniam, dolor velit!
+                    Amet laudantium perspiciatis est quia eveniet maiores quo assumenda eos voluptate expedita rerum iste quae blanditiis, iusto eaque deleniti? Voluptate!
+                    Atque, aliquid! Recusandae et modi itaque necessitatibus iure accusamus magni? Quis repellat consectetur aperiam expedita odio molestias repudiandae a autem.
+                </p>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

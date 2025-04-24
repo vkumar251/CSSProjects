@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Columns | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            h1 {font-size: 40px;}
+            p {font-size: 20px;}
+            section {margin: 4rem;}
+
+            body
+            {
+                background-color: #c0c0c0;
+                font-family: Arial;
+            }
+            .columns
+            {
+                /*column-count: 4;
+                column-width: 250px; */
+                columns: 4 250px;
+                column-rule: 3px solid #0062be;
+                column-gap: 4rem;
+            }
+            .columns h2
+            {
+                background-color: black;
+                color: white;
+                padding: 1rem;
+                break-inside: avoid;
+            }
+            .columns p
+            {
+                margin: 2rem;
+            }
+            .columns .quote
+            {
+                font-size: 3rem;
+                text-align: center;
+                color: #383838;
+                column-span: all;
+            }
+            .no-wrap
+            {
+                white-space: nowrap;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Heading 1</h1>
+        </header>
+        <main>
+            <section class="columns">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolorem rem unde repellat repudiandae eos velit esse recusandae reiciendis incidunt?</p>
+                <p>Reprehenderit, facere quaerat aspernatur dolorum hic culpa. Iusto, vero optio! Eum cupiditate impedit, reprehenderit molestiae id natus. Quo, quibusdam numquam.</p>
+                <!--<h2>Heading 2</h2>-->
+                <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet <span class="no-wrap">consectetur adipisicing elit.</span></p>
+                <p>Quos sapiente nobis cumque accusamus? Ad error, commodi modi quam, sequi dolores nemo saepe eius sint, aut nam quaerat quisquam.</p>
+                <p>Veniam ad quos iusto repellat aspernatur accusantium nisi, modi ipsum voluptatem nulla a sint? Voluptatem quam laborum numquam officia libero.</p>
+            </section>
+            <section>
+                <p>Nostrum, quas repellat quaerat voluptatibus possimus voluptate asperiores tenetur, inventore, soluta aperiam unde? Non odio soluta ab, hic recusandae accusamus?</p>
+            </section>  
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>
