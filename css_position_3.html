@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Position | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+    <style>
+        html {scroll-behavior: smooth;}
+        h1 {font-size: 40px; text-decoration: underline;}
+        h2 {font-size: 30px;}
+        h3 {font-size: 20px;}
+        p {font-size: 20px; background-color: #c1c1c1; height: 500px; padding: 1rem;}
+
+        body
+        {
+            background-color: #bababa;
+            font-family: Arial;
+        }
+        header, footer
+        {
+            text-align: center;
+            height: 50px;
+        }
+        header
+        {
+            font-size: 3rem;
+            position: sticky;
+            top: 0;
+        }
+        footer
+        {
+            font-size: 1.5rem;
+            background-color: grey;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        footer a {color: white; text-decoration: none;}
+        footer a:hover {text-decoration: underline;}
+        footer a:focus {text-decoration: underline;}
+
+        #header1 {background-color: #00ffd5;}
+        #header2 {background-color: #8fff69;}
+        #header3 {background-color: #ff50f3;}
+        #header4 {background-color: #ffdd00;}
+
+    </style>
+    </head>
+    <body>
+        <main>
+            <section id="section1">
+                <header id="header1">Section 1</header>
+                <p>This is section 1.</p>
+            </section>
+            <section id="section2">
+                <header id="header2">Section 2</header>
+                <p>This is section 2.</p>
+            </section>
+            <section id="section3">
+                <header id="header3">Section 3</header>
+                <p>This is section 3.</p>
+            </section>
+            <section id="section4">
+                <header id="header4">Section 4</header>
+                <p>This is section 4.</p>
+            </section>
+        </main>
+        <footer>
+            <a href="#section1">Section 1</a>
+            <a href="#section2">Section 2</a>
+            <a href="#section3">Section 3</a>
+            <a href="#section4">Section 4</a>
+        </footer>
+    </body>
+</html>
