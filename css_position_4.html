@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Position | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            html {scroll-behavior: smooth;}
+            body
+            {
+                font-family: "Fuzzy Bubbles", sans-serif; font-style: normal;
+                color: white;
+            }
+            h1
+            {
+                font-size: 30px; 
+                text-align: center;
+                padding: 0.5rem;
+                position: sticky;
+                top: 0; /* adjust top for sticky position */
+            }
+            h2 
+            {
+                font-size: 20px; 
+                text-decoration: underline;
+            }
+            p 
+            {
+                font-size: 20px;  
+                padding: 2rem;
+                height: 300px;
+            }
+            footer 
+            {
+                background-color: #313131; 
+                position: fixed; /* always keep footer at same position */
+                bottom: 0; /* keep footer on bottom */
+                width: 100%;
+                padding: 1rem;
+                text-align: center;
+            }
+            section
+            {
+                background-color: #350046;
+                margin: 2rem;
+                border: 5px ridge #5e5e5e;
+            }
+            footer a {font-size: 20px; color: #ff00a6; text-decoration: none; padding: 2rem;}
+            footer a:hover {color: #810074;}
+            footer a:focus {color: #810074;}
+            .highlight {background-color: gold; color: black;}
+            
+            #heading1 {background-color: green; color: black;}
+            #heading2 {background-color: yellow; color: black;}
+            #heading3 {background-color: red; color: black;}
+            #heading4 {background-color: blue; color: black;}
+            #heading5 {background-color: purple; color: black;}
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <section id="section1">
+                <h1 id="heading1">Section 1 - Static Position</h1>
+                <p>
+                    Static position is the default position set in CSS and does nothing. Static simply means
+                    the element appears in its normal position in the document flow and is not affected when the
+                    webpage is being scrolled by the user.
+                </p>
+            </section>
+            <section id="section2">
+                <h1 id="heading2">Section 2 - Relative Position</h1>
+                <p>
+                    Relative position sets the content to always be relatively positioned to its normal
+                    location. Changing the top/bottom/left/right property values of a 'relative' element will cause
+                    the contents inside to be adjusted away from the normal position.
+                </p>
+            </section>
+            <section id="section3">
+                <h1 id="heading3">Section 3 - Absolute Position</h1>
+                <p>
+                    Absolute position means the content gets positioned to the nearest 'parent' element. If
+                    the webpage has no positioned parent element, it will use the body of the webpage and moves
+                    along with the user's scrolling.
+                </p>
+            </section>
+            <section id="section4">
+                <h1 id="heading4">Section 4 - Sticky Position</h1>
+                <p>
+                    Sticky position works similarly to a fixed position but with conditions. The content nested within
+                    a sticky position will remain fixed to the viewport while scrolling until it aligns or crashes into
+                    another element of similar position - e.g. divs. <span class="highlight">On this example webpage,
+                    all the (h1) headings have a sticky position applied to them.</span>
+                </p>
+            </section>
+            <section id="section5">
+                <h1 id="heading5">Section 5 - Fixed Position</h1>
+                <p>
+                    Fixed position is an unconditional version of the sticky position. Content that is fixed to a
+                    webpage always stays in the exact same location on the viewport no matter what velocity the
+                    user scrolls.
+                </p>
+            </section>
+            <div style="height: 75px;"></div> <!--add gap between section and footer-->
+        </main>
+        <footer>
+            <a href="#section1">Section 1</a>
+            <a href="#section2">Section 2</a>
+            <a href="#section3">Section 3</a>
+            <a href="#section4">Section 4</a>
+            <a href="#section5">Section 5</a>
+        </footer>
+    </body>
+</html>
