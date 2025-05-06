@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>CSS Flexbox | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            h1 {font-size: 40px; color: #ce00ab; text-shadow: 10px 10px 5px #29005f;}
+            h2 {font-size: 30px; color: #070070; padding: 1rem;}
+            p {font-size: 20px; padding: 1rem;}
+            .section1 {margin-top: 1rem;}
+            .section2 {}
+            .section3 {}
+            .span-italic {font-style: italic;}
+            .span-oblique {font-style: oblique;}
+            .span-underline {text-decoration: underline;}
+            .span-strikethrough {text-decoration: line-through;}
+            .span-bold {font-weight: 700;}
+            .span-highlight {background-color: gold; color: black;}
+
+            body 
+            {
+                font-family: Arial;
+                background-color: #002418;
+                margin: 2rem; 
+            }
+            header 
+            {
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+            section 
+            {
+                background-color: white;
+                border: 5px solid #c70000;
+                border-radius: 10px;
+                outline: 5px outset #0004ff;
+                max-width: 80%;
+
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 4rem;
+                margin-bottom: 4rem;
+            }
+            section ul li
+            {
+                list-style: inside;
+                list-style-type: square;
+                font-size: 20px;
+                padding-left: 1.5rem;
+            }
+            section ul li:last-child {padding-bottom: 1rem;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>CSS Flexbox</h1>
+        </header>
+        <main>
+            <section class="section1">
+                <h2 class="span-underline">Overview</h2>
+                <p>
+                    Flexbox is a CSS layout model that allows us to create flexible, responsive layouts with the 
+                    help of a single container element and its child elements. A flexbox is first created by having
+                    the parent element be declared as the flex container. After that, flex items are nested inside
+                    the flex container. Flex containers are commonly applied to div elements.
+                </p>
+            </section>
+            <section class="section2">
+                <h2 class="span-underline">Parent Properties</h2>
+                <p>
+                    Below are properties applied only to the <span class="span-bold">parent</span> flex element - i.e. the flex container:
+                </p>
+                <ul>
+                    <li><span class="span-highlight span-bold">flex-direction:</span><span class="span-highlight"> [row, column, row-reverse, column-reverse]</span> - 
+                    specify the direction to display flex items. Default value: row.</li>
+                    <li><span class="span-highlight span-bold">flex-wrap:</span><span class="span-highlight"> [wrap, nowrap, wrap-reverse]</span> - 
+                    specify whether to wrap flex items within the container. Commonly used when there's not enough space to fit it inside the container.</li>
+                    <li><span class="span-highlight span-bold">flex-flow:</span><span class="span-highlight"> [flex-direction] [flex-wrap]</span> - 
+                    <span class="span-oblique">flex-wrap</span> and <span class="span-oblique">flex-direction</span> both combined into one property. E.g.
+                    <span style="color: darkred;">flex-wrap:</span> <span style="color: darkblue;">row nowrap;</span></li>
+                    <li><span class="span-highlight span-bold">justify-content:</span><span class="span-highlight"> [flex-start, flex-end, center,
+                    space-around, space-between, space-evenly]</span> - align flex items horizontally.</li>
+                    <li><span class="span-highlight span-bold">align-items:</span><span class="span-highlight"> [flex-start, flex-end, center, stretch,
+                    baseline, normal]</span> - align flex items vertically.</li>
+                    <li><span class="span-highlight span-bold">align-content:</span><span class="span-highlight"> [flex-start, flex-end, center, stretch,
+                    space-around, space-between, space-evenly]</span> - align <span class="span-underline">flex lines</span> instead of flex items.</li>
+                </ul>
+            </section>
+            <section class="section3">
+                <h2 class="span-underline">Child Properties</h2>
+                <p>
+                    Below are properties applied only to the <span class="span-bold">children</span> flex elements - i.e. the flex items nested inside the flex container:
+                </p>
+            </section>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible", content="IE-edge">
+        <title>Position | Vijay CSS</title>
+        <link rel="stylesheet", href="css/style.css">
+        <link rel="stylesheet", href="css/fonts.css">
+        <link rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!--Import more fonts from font-awesome-->
+        <style>
+            html {scroll-behavior: smooth;}
+            body {font-family: Arial; background-color: #6e6e6e;}
+            section {border: 5px groove #4d4d4d; margin: 2rem;} 
+            h1 
+            {
+                font-size: 40px; 
+                text-align: center; 
+                background-color: #9900ff; 
+                padding: 1rem;
+                top: 0;
+                position: sticky;
+            }
+            p
+            {
+                font-size: 30px;
+                padding: 2rem;
+                background-color: #000a2b;
+                color: white;
+                height: 700px;
+            }
+            footer div {background-color: #2c0011; font-size: 25px; width: 100%; text-align: center; padding: 1rem; bottom: 0; position: fixed;}
+            footer div a {color: #ff0080; padding: 4rem;}
+            footer div a:hover, 
+            footer div a:focus {color: #ff8599;}
+            .highlight {background-color: gold; color: black;}
+        </style>
+    </head>
+    <body>
+        <header>
+        </header>
+        <main>
+            <section id="section1">
+                <h1>Section 1 - Static Position</h1>
+                <p>
+                    Static position is the default position set in CSS and does nothing. Static simply means
+                    the element appears in its normal position in the document flow and is not affected when the
+                    webpage is being scrolled by the user.
+                </p>
+            </section>
+            <section id="section2">
+                <h1>Section 2 - Relative Position</h1>
+                <p>
+                    Relative position sets the content to always be relatively positioned to its normal
+                    location. Changing the top/bottom/left/right property values of a 'relative' element will cause
+                    the contents inside to be adjusted away from the normal position.
+                </p>
+            </section>
+            <section id="section3">
+                <h1>Section 3 - Absolute Position</h1>
+                <p>
+                    Absolute position means the content gets positioned to the nearest 'parent' element. If
+                    the webpage has no positioned parent element, it will use the body of the webpage and moves
+                    along with the user's scrolling.
+                </p>
+            </section>
+            <section id="section4">
+                <h1>Section 4 - Sticky Position</h1>
+                <p>
+                    Sticky position works similarly to a fixed position but with conditions. The content nested within
+                    a sticky position will remain fixed to the viewport while scrolling until it aligns or crashes into
+                    another element of similar position - e.g. divs. <span class="highlight">On this example webpage,
+                    all the (h1) headings have a sticky position applied to them.</span>
+                </p>
+            </section>
+            <section id="section5">
+                <h1>Section 5 - Fixed Position</h1>
+                <p>
+                    Fixed position is an unconditional version of the sticky position. Content that is fixed to a
+                    webpage always stays in the exact same location on the viewport no matter what velocity the
+                    user scrolls.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <a href="#section1">Section 1</a>
+                <a href="#section2">Section 2</a>
+                <a href="#section3">Section 3</a>
+                <a href="#section4">Section 4</a>
+                <a href="#section5">Section 5</a>
+            </div>
+        </footer>
+    </body>
+</html>
